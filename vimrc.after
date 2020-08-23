@@ -4,6 +4,7 @@ map <leader>rt :!ctags --extra=+f --exclude=.git --exclude=log --exclude=vendor 
 
 autocmd BufWritePre * :%s/\s\+$//e
 
+highlight Normal ctermbg=Black
 highlight ExtraWhitespace ctermbg=yellow guibg=yellow
 match ExtraWhitespace /\s\+$/
 autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
