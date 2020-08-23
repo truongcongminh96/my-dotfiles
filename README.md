@@ -10,7 +10,7 @@ __   __  _     ____   ____
     # Now awesome hotkeys and new Bundle
     # Credit: trongrg/dotfiles
 
-#### sh -c "\`curl -fsSL https://raw.githubusercontent.com/truongcongminh96/awesomevim/master/install.sh \`"
+#### sh -c "\`curl -fsSL https://raw.githubusercontent.com/truongcongminh96/my-dotfiles/master/install.sh \`"
 **Few more things
 
 **Have trouble with YouCompleteMe?
@@ -42,7 +42,7 @@ __   __  _     ____   ____
 To get started please run:
 
 ```bash
-sh -c "`curl -fsSL https://raw.githubusercontent.com/truongcongminh96/awesomevim/master/install.sh`"
+sh -c "`curl -fsSL https://raw.githubusercontent.com/truongcongminh96/my-dotfiles/master/install.sh`"
 ```
 
 ## Wait, you're not done! Do this:
