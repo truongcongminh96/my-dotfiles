@@ -35,4 +35,3 @@ let g:ctrlp_working_path_mode = '0'
 
 set grepprg=ag
 let g:grep_cmd_opts = '--line-numbers --noheading'
-let g:dbgPavimPathMap = [['/Users/trongtran/code/co-ag','/vagrant']]
