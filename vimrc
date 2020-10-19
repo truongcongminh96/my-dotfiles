@@ -50,7 +50,7 @@ set nowb
 " ================ Persistent Undo ==================
 " Keep undo history across sessions, by storing in file.
 " Only works all the time.
-if has('persistent_undo') && !isdirectory(expand('~').'/.vim/backups')
+if has('persistent_undo') && isdirectory(expand('~').'/.vim/backups')
   silent !mkdir ~/.vim/backups > /dev/null 2>&1
   set undodir=~/.vim/backups
   set undofile
@@ -69,11 +69,6 @@ set expandtab
 " Auto indent pasted text
 nnoremap p p=`]<C-o>
 nnoremap P P=`]<C-o>
-nnoremap <D-J> :m .+1<CR>==
-nnoremap <D-K> :m .-2<CR>==
-vnoremap <D-J> :m '>+1<CR>gv=gv
-vnoremap <D-K> :m '<-2<CR>gv=gv
-let g:ale_sign_error = '--'
 
 filetype plugin on
 filetype indent on
@@ -105,7 +100,6 @@ set wildignore+=log/**
 set wildignore+=tmp/**
 set wildignore+=*.png,*.jpg,*.gif
 
-"
 " ================ Scrolling ========================
 
 set scrolloff=8         "Start scrolling when we're 8 lines away from margins
@@ -118,6 +112,10 @@ set incsearch       " Find the next match as we type the search
 set hlsearch        " Highlight searches by default
 set ignorecase      " Ignore case when searching...
 set smartcase       " ...unless we type a capital
+
+" ================ Security ==========================
+set modelines=0
+set nomodeline
 
 " ================ Custom Settings ========================
 so ~/.yadr/vim/settings.vim

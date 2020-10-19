@@ -28,12 +28,11 @@ runtime textobjects.vundle
 runtime search.vundle
 runtime project.vundle
 runtime vim-improvements.vundle
-runtime local.vundle
 
 " The plugins listed in ~/.vim/.vundles.local will be added here to
 " allow the user to add vim plugins to yadr without the need for a fork.
-if filereadable(expand("~/.yadr/vim/vundles.local.vim"))
-  source ~/.yadr/vim/vundles.local.vim
+if filereadable(expand("~/.yadr/vim/.vundles.local"))
+  source ~/.yadr/vim/.vundles.local
 endif
 
 "Filetype plugin indent on is required by vundle
