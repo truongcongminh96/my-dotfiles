@@ -10,6 +10,7 @@ endif
 
 " ================ General Config ====================
 
+let g:solarized_termcolors=256
 set number                      "Line numbers are good
 set backspace=indent,eol,start  "Allow backspace in insert mode
 set history=1000                "Store lots of :cmdline history
@@ -25,7 +26,7 @@ set autoread                    "Reload files changed outside vim
 set hidden
 
 "turn on syntax highlighting
-syntax on
+syntax enable
 
 " Change leader to a comma because the backslash is too far away
 " That means all \x commands turn into ,x
