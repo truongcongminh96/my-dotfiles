@@ -11,6 +11,8 @@
 
 #### sh -c "`curl -fsSL https://raw.githubusercontent.com/truongcongminh96/my-dotfiles/master/install.sh `"
 
+**My dotfiles add more plugin for Go developer include vim-go and autocomplete**
+
 **Always be sure to run `rake update` after pulling to ensure plugins are updated**
 
 ## What is YADR?
