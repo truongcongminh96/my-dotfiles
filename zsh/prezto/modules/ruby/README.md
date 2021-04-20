@@ -63,7 +63,6 @@ Aliases
 ### Bundler
 
   - `rbb` manages ruby dependencies (`bundle`).
-  - `rbbc` cleans up unused gems in your bundler directory.
   - `rbbe` executes a script in the context of the current bundle.
   - `rbbi` installs the gems specified in the *Gemfile* in *vendor/bundle*.
   - `rbbI` installs the following:

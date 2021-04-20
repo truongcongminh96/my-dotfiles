@@ -103,26 +103,11 @@ function editor-info {
   fi
 
   unset REPLY
-  zle zle-reset-prompt
+
+  zle reset-prompt
+  zle -R
 }
 zle -N editor-info
-
-# Reset the prompt based on the current context and
-# the ps-context option.
-function zle-reset-prompt {
-  if zstyle -t ':prezto:module:editor' ps-context; then
-    # If we aren't within one of the specified contexts, then we want to reset
-    # the prompt with the appropriate editor_info[keymap] if there is one.
-    if [[ $CONTEXT != (select|cont) ]]; then
-      zle reset-prompt
-      zle -R
-    fi
-  else
-    zle reset-prompt
-    zle -R
-  fi
-}
-zle -N zle-reset-prompt
 
 # Updates editor information when the keymap changes.
 function zle-keymap-select {
@@ -341,4 +326,4 @@ else
   print "prezto: editor: invalid key bindings: $key_bindings" >&2
 fi
 
-unset key{,map,_bindings}
+unset key{,map,bindings}
